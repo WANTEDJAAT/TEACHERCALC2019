@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Krishna Chahar">
+<style>
+</style>
+<title>Teachers Final Marks Calculator - 2019 (by Krishna)</title>
+</head>
+
+<body bgcolor="lightslategray">
+
+<script>
+{
+function checkFruit1() 
+{
+var text,a,b,c,d,e,x;
+a=document.getElementById("myInput1").value; 
+b=document.getElementById("myInput2").value;
+c=document.getElementById("myInput3").value; 
+d=document.getElementById("myInput4").value; 
+e=document.getElementById("myInput5").value; 
+x = document.getElementById("myCheck");
+if ((a== null || a== "")||(b== null || b== "")||(c== null || c== "")||(d== null || d== "")||(e== null || e== ""))
+{
+text ="Please Input All Values / कृपया सभी फील्ड ध्यान से भरें ।";
+document.getElementById("demo").innerHTML=text; 
+}
+else
+{
+text =(a*0.1)+(b*0.1)+(c*0.1)+(d*0.1)+e*(100/150)*(60/100);
+document.getElementById("demo").innerHTML="Last Multiplier / अंतिम गुणक   =>&nbsp; &nbsp;  <b>"  + text +"</b>";} 
+}}
+</script>
+
+<script>
+{
+function checkFruit2() 
+{
+var text,a,b,c,d,e,x;
+a=document.getElementById("myInput1").value; 
+b=document.getElementById("myInput2").value;
+c=document.getElementById("myInput3").value; 
+d=document.getElementById("myInput4").value; 
+e=document.getElementById("myInput5").value; 
+x = document.getElementById("myCheck");
+if ((a== null || a== "")||(b== null || b== "")||(c== null || c== "")||(d== null || d== "")||(e== null || e== ""))
+{
+text ="Please Input All Values / कृपया सभी फील्ड ध्यान से भरें ।";
+document.getElementById("demo").innerHTML=text; 
+}
+else
+{
+text =(a*0.1)+(b*0.1)+(c*0.1)+(d*0.1)+e*(100/150)*(60/100)+25;
+document.getElementById("demo").innerHTML="Shikshamitra(+25) अंतिम गुणक   =>&nbsp; &nbsp;  <b>"  + text +"</b>";
+} 
+}}
+</script>
+
+
+<table border="0" width="99%" BORDERCOLOR="red" cellpadding="5">
+<tr><td><b><center><font size="5" face="Sahitya">Teachers Recruitment Calculator - 2019 </br> शिक्षक भर्ती  कैल्कुलेटर  by Krishna </font ></center></b></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+
+<tr><td><center><table border="0" width="99%" cellpadding="0">
+
+<tr><td><center><font size="3" style="text-shadow: 0 0 6px white;">HighSchool / हाईस्कूल :-</font ></br><input id="myInput1" type="number" value="" placeholder=" %"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><center><font size="3" style="text-shadow: 0 0 6px white;">Intermediate / इंटरमीडिएट :-</font ></br><input id="myInput2" type="number" value="" placeholder=" %"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><center><font size="3" style="text-shadow: 0 0 6px white;">Graduation / स्नातक :-</font ></br><input id="myInput3" type="number" value="" placeholder=" %"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><center><font size="3" style="text-shadow: 0 0 6px white;">BTC / बी.टी.सी. :-</font ></br><input id="myInput4" type="number" value="" placeholder=" %"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><center><font size="3" style="text-shadow: 0 0 6px white;">69000 Exam / परीक्षा :-</font ></br><input id="myInput5" type="number" value="" placeholder=" Marks out of  /150"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+<tr><td><center></br><button onclick="checkFruit1()" style="background: #2b3d4f; color: white; padding: 1%;">BTC / BEd. Calculator</button></br><!--OR</br><button onclick="checkFruit2()" style="background: #2b3d4f; color: white;">Shikshamitr / शिक्षामित्र Calculator</button>--></br></td></tr></table>
+</td></tr></table>
+
+
+<center> <table border="0" width="50%" cellpadding="40">  <tr bgcolor="white"><td><p id="demo" style="font-size:18px; color:firebrick;" align="center"> </p></td></tr> </table> </center>
+<br>
+<br>
+
+<center> <table border="0" width="50%" cellpadding="40">  <tr ><td><p align="center"> © Designed & Developed By Krishna </p></td></tr> </table> </center>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script language="JavaScript">
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+</center>
+
+</body>
+</html>
